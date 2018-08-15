@@ -1,19 +1,18 @@
 package com.lsq.dao;
 
-import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity
+//@Entity
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+//    @Id
+//    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private String name;
-    @Column(nullable = false, unique = true)
+//    @Column(nullable = false, unique = true)
     private int age;
-    @Column(nullable = false)
+//    @Column(nullable = false)
     private String address;
 
     public User(String name, int age, String address) {
